@@ -8,7 +8,7 @@ The repository includes two scripts, one for the automatic initialization of the
 
 To test the scenario, you must run:
 
-```console
+```bash
 #Initializing the example
 sudo ./init.sh
 
