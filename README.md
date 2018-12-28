@@ -18,6 +18,17 @@ sudo ./close.sh
 
 The superuser privileges are usually required in the majority of Linux Docker installations.
 
+## Default services
+
+Without any modifications, the example includes:
+
+- A single-page Apache server, redirected to port 5000
+- A Wordpress installation, that consists of: 
+     - A Wordpress containter, redirected to port 8000
+     - A MySQL server, not visible from the outside
+
+The first time that the example is ran, the Wordpress needs to be installed, accessing it from a broswer, in order to test the resources monitoring.
+
 ## Structure of the example
 
 The structure of the project is simple. The folder that holds all the network and container information is /networks. Inside, there will be as much directories as clients/networks. We suppose that each client needs one or more containers that interact only within that network. That's why there is a single docker-compose file in each of the folders, with the number and type of containers needed.
