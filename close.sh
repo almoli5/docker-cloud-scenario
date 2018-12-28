@@ -2,7 +2,7 @@
 
 launchCompose(){
     cd $1
-    docker-compose up -d
+    docker-compose down
     cd ..
 }
 
