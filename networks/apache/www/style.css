@@ -1,0 +1,60 @@
+.center{
+    text-align: center;
+    
+    font-family: 'Righteous', cursive;
+    font-size: 200px;
+    display: flex;
+    
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+}
+
+.center>span{
+    width:100vw;
+    background: rgba(0, 0, 0, 0) linear-gradient(270deg, rgb(23, 158, 234), rgb(234, 23, 152)) repeat scroll 0% 0% / 200% 200%;
+    animation: 20s ease 0s infinite normal none running Animation;
+    -webkit-animation: 20s ease 0s infinite normal none running Animation;
+    -moz-animation: 20s ease 0s infinite normal none running Animation;
+    
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgba(0,255,0,0);
+
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+span::selection{
+    background: #00000000;
+}
+span::-moz-selection{
+    background: #00000000;
+}
+span::-webkit-selection{
+    background: #00000000;
+}
+@-webkit-keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

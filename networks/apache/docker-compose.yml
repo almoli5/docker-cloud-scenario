@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+   db:
+     image: httpd
+     volumes:
+       - ./www:/usr/local/apache2/htdocs/
+     ports:
+       - "5000:80"
